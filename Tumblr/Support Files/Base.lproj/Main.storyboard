@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ee2-SA-NFz">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--图片-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="CCHomeImageController" customModule="Tumblr" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="aG7-42-9uq">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <color key="backgroundColor" red="0.25882352939999997" green="0.40784313729999999" blue="0.54901960780000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="separatorColor" red="0.25882352939999997" green="0.40784313729999999" blue="0.54901960780000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="b4S-mA-OFY"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Vg5-lX-JAU"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.25882352939999997" green="0.40784313729999999" blue="0.54901960780000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aG7-42-9uq" secondAttribute="trailing" id="AZm-je-G0S"/>
+                            <constraint firstItem="aG7-42-9uq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Y9z-9u-8Lc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="aG7-42-9uq" secondAttribute="bottom" id="bmW-WN-BPG"/>
+                            <constraint firstItem="aG7-42-9uq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="vxW-Q0-TDK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="图片" image="tab_image_2" selectedImage="tab_image_2" id="7it-AY-n1o"/>
+                    <connections>
+                        <outlet property="tableView" destination="aG7-42-9uq" id="gkV-My-CiA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="847" y="-891"/>
+        </scene>
+        <!--Main Tab Bar Controller-->
+        <scene sceneID="0c1-Bp-Nti">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ee2-SA-NFz" customClass="CCMainTabBarController" customModule="Tumblr" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="lgI-jb-BkY">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.18514699003578952" green="0.21348299756729031" blue="0.28941941624365486" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="ZqQ-0r-pip"/>
+                        <segue destination="rJx-TM-S6e" kind="relationship" relationship="viewControllers" id="okY-E7-XdF"/>
+                        <segue destination="p25-HZ-zOz" kind="relationship" relationship="viewControllers" id="dT8-kL-8Ps"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OvT-0j-LHM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-202" y="54"/>
+        </scene>
+        <!--视频-->
+        <scene sceneID="dRH-LO-OkW">
+            <objects>
+                <viewController id="rJx-TM-S6e" customClass="CCHomeVideoController" customModule="Tumblr" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UaR-Cq-dRg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="937-BN-2wj"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="视频" image="tab_video" id="lyD-i9-Wfm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ndj-58-MiG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1057" y="-62"/>
+        </scene>
+        <!--我的-->
+        <scene sceneID="kij-fY-KKC">
+            <objects>
+                <viewController id="p25-HZ-zOz" customClass="CCProfileController" customModule="Tumblr" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="egw-e8-NgH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="dsD-P2-0aC"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="我的" image="tab_profile_1" selectedImage="tab_profile_2" id="bjy-jg-5SQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f2S-Hd-zRI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1057" y="620"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tab_image_2" width="24" height="24"/>
+        <image name="tab_profile_1" width="24" height="24"/>
+        <image name="tab_profile_2" width="24" height="24"/>
+        <image name="tab_video" width="24" height="24"/>
+    </resources>
+</document>
