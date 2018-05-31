@@ -61,7 +61,7 @@ class CCSpliteImageView: UIView {
                 let tapEvent = UITapGestureRecognizer.init(target: self, action: #selector(imageTapGesture(tapgesture:)))
                 imageView.addGestureRecognizer(tapEvent)
                 let imageURL = array[p]["original_size"]["url"].stringValue
-//                imageView.kf.setImage(with: URL.init(string: imageURL))
+                imageView.kf.setImage(with: URL.init(string: imageURL))
                 self.addSubview(imageView)
                 self.imageArray.add(imageView)
                 
