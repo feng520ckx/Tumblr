@@ -8,4 +8,4 @@
 #import <MBProgressHUD/MBProgressHUD.h>
 #import <MJRefresh/MJRefresh.h>
 #import <WXApi.h>
-
+#import "KXPlayer.h"

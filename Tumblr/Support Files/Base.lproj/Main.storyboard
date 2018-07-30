@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ee2-SA-NFz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ee2-SA-NFz">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -76,14 +76,33 @@
                     <view key="view" contentMode="scaleToFill" id="UaR-Cq-dRg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="255" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="x1r-YL-5a5">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <color key="backgroundColor" red="0.25882352939999997" green="0.40784313729999999" blue="0.54901960780000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="rJx-TM-S6e" id="d4S-Ap-qzO"/>
+                                    <outlet property="delegate" destination="rJx-TM-S6e" id="BXT-Vs-KCX"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.25308045740000001" green="0.3936281204" blue="0.53081715110000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="x1r-YL-5a5" firstAttribute="top" secondItem="937-BN-2wj" secondAttribute="top" id="9hM-aB-keD"/>
+                            <constraint firstItem="x1r-YL-5a5" firstAttribute="leading" secondItem="937-BN-2wj" secondAttribute="leading" id="L0Q-yb-dM7"/>
+                            <constraint firstItem="x1r-YL-5a5" firstAttribute="bottom" secondItem="937-BN-2wj" secondAttribute="bottom" id="MV3-z4-nik"/>
+                            <constraint firstItem="x1r-YL-5a5" firstAttribute="trailing" secondItem="937-BN-2wj" secondAttribute="trailing" id="vwU-y0-Xbf"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="937-BN-2wj"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="视频" image="tab_video" id="lyD-i9-Wfm"/>
+                    <connections>
+                        <outlet property="tableView" destination="x1r-YL-5a5" id="eJC-AV-IBI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ndj-58-MiG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1057" y="-62"/>
+            <point key="canvasLocation" x="1056.8" y="-62.518740629685162"/>
         </scene>
         <!--我的-->
         <scene sceneID="kij-fY-KKC">

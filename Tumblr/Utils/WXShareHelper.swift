@@ -22,7 +22,7 @@ class WXShareHelper: NSObject {
         case .Image:
             self.shareImage(scene: scene, image: shareData as! UIImage)
         case .Video:
-            self.shareImage(scene: scene, image: shareData as! UIImage)
+            self.shareVideo(scene: scene, video: shareData as! String)
 
         }
         
@@ -43,9 +43,22 @@ class WXShareHelper: NSObject {
         WXApi.send(req)
     }
     
-//    func shareVideo(scene:WXScene, video:) -> <#return type#> {
-//        <#function body#>
-//    }
+    private class func shareVideo(scene:WXScene, video:String){
+        let message = WXMediaMessage.init()
+        message.title = "嘿嘿嘿 发现一个好看的视频"
+        message.description = "来看一看嘛~"
+        
+        let videoObj = WXVideoObject.init()
+        videoObj.videoUrl = video
+        videoObj.videoLowBandUrl = video
+        
+        let req = SendMessageToWXReq.init()
+        req.bText = false
+        req.message = message
+        req.scene = Int32(scene.rawValue)
+        WXApi.send(req)
+        
+    }
     
     
 }

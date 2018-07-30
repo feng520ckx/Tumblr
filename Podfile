@@ -19,6 +19,9 @@ target 'Tumblr' do
   pod 'JXPhotoBrowser'
   pod 'MJRefresh'
   pod 'WechatOpenSDK'
+#  pod 'AliyunPlayer_iOS/AliyunPlayerSDK'
+
+
 
 
 end

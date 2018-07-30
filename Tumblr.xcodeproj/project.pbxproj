@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		2FBE4375281BBA896DE2C4B5 /* Pods_Tumblr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5E82606A0281F67B2B2649B /* Pods_Tumblr.framework */; };
+		F30A0827210EAEA7002C1F3C /* CCVideoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F30A0825210EAEA7002C1F3C /* CCVideoTableViewCell.xib */; };
+		F30A0829210EBC81002C1F3C /* CCVideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30A0828210EBC81002C1F3C /* CCVideoTableViewCell.swift */; };
+		F30A082C210EEF9D002C1F3C /* CCVideoDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30A082A210EEF9D002C1F3C /* CCVideoDetailController.swift */; };
+		F30A082D210EEF9D002C1F3C /* CCVideoDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F30A082B210EEF9D002C1F3C /* CCVideoDetailController.xib */; };
+		F30A084A210EFE96002C1F3C /* KXPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = F30A0849210EFE96002C1F3C /* KXPlayer.m */; };
 		F30D8A6820A69AEB00025EAE /* CCAuthorizedManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30D8A6720A69AEB00025EAE /* CCAuthorizedManager.swift */; };
 		F30D8A6A20A69C1700025EAE /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30D8A6920A69C1700025EAE /* Const.swift */; };
 		F30D8A6D20A6C76900025EAE /* CCAuthorizedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30D8A6B20A6C76900025EAE /* CCAuthorizedController.swift */; };
@@ -39,10 +44,39 @@
 		F3CDFE1C20A543FF00A56B49 /* CCScrrenBlockViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3CDFE1A20A543FF00A56B49 /* CCScrrenBlockViewController.xib */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F30A083C210EF881002C1F3C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F30A083D210EF881002C1F3C /* Embed PlugIns */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed PlugIns";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0E47FA20B0FE7720EB8EF8BF /* Pods-Tumblr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tumblr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tumblr/Pods-Tumblr.debug.xcconfig"; sourceTree = "<group>"; };
 		BE21BF03ACF87D71388C9B27 /* Pods-Tumblr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tumblr.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tumblr/Pods-Tumblr.release.xcconfig"; sourceTree = "<group>"; };
 		D5E82606A0281F67B2B2649B /* Pods_Tumblr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tumblr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F30A0825210EAEA7002C1F3C /* CCVideoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCVideoTableViewCell.xib; sourceTree = "<group>"; };
+		F30A0828210EBC81002C1F3C /* CCVideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCVideoTableViewCell.swift; sourceTree = "<group>"; };
+		F30A082A210EEF9D002C1F3C /* CCVideoDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCVideoDetailController.swift; sourceTree = "<group>"; };
+		F30A082B210EEF9D002C1F3C /* CCVideoDetailController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CCVideoDetailController.xib; sourceTree = "<group>"; };
+		F30A0848210EFE96002C1F3C /* KXPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KXPlayer.h; sourceTree = "<group>"; };
+		F30A0849210EFE96002C1F3C /* KXPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KXPlayer.m; sourceTree = "<group>"; };
 		F30D8A6720A69AEB00025EAE /* CCAuthorizedManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCAuthorizedManager.swift; sourceTree = "<group>"; };
 		F30D8A6920A69C1700025EAE /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		F30D8A6B20A6C76900025EAE /* CCAuthorizedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCAuthorizedController.swift; sourceTree = "<group>"; };
@@ -205,6 +239,8 @@
 			isa = PBXGroup;
 			children = (
 				F3CDFE1420A5420400A56B49 /* CCHomeVideoController.swift */,
+				F30A082A210EEF9D002C1F3C /* CCVideoDetailController.swift */,
+				F30A082B210EEF9D002C1F3C /* CCVideoDetailController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -220,6 +256,8 @@
 		F3CDFDDF20A5406600A56B49 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F30A0825210EAEA7002C1F3C /* CCVideoTableViewCell.xib */,
+				F30A0828210EBC81002C1F3C /* CCVideoTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -295,6 +333,8 @@
 		F3CDFDE820A5406600A56B49 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				F30A0848210EFE96002C1F3C /* KXPlayer.h */,
+				F30A0849210EFE96002C1F3C /* KXPlayer.m */,
 			);
 			path = Libs;
 			sourceTree = "<group>";
@@ -356,6 +396,8 @@
 				F3B9901E20A2E45E009A3332 /* Frameworks */,
 				F3B9901F20A2E45E009A3332 /* Resources */,
 				8290884CBA5216C68E76260A /* [CP] Embed Pods Frameworks */,
+				F30A083C210EF881002C1F3C /* Embed Frameworks */,
+				F30A083D210EF881002C1F3C /* Embed PlugIns */,
 			);
 			buildRules = (
 			);
@@ -416,6 +458,8 @@
 				F38C6CCA20AE9D92005C01C7 /* ic_06.jpeg in Resources */,
 				F3CDFE1C20A543FF00A56B49 /* CCScrrenBlockViewController.xib in Resources */,
 				F38C6CC920AE9D92005C01C7 /* ic_10.jpeg in Resources */,
+				F30A082D210EEF9D002C1F3C /* CCVideoDetailController.xib in Resources */,
+				F30A0827210EAEA7002C1F3C /* CCVideoTableViewCell.xib in Resources */,
 				F38C6CD020AE9D92005C01C7 /* ic_02.jpeg in Resources */,
 				F38C6CD120AE9D92005C01C7 /* ic_03.jpeg in Resources */,
 				F30D8A6E20A6C76900025EAE /* CCAuthorizedController.xib in Resources */,
@@ -498,13 +542,16 @@
 				F3CDFE1B20A543FF00A56B49 /* CCScrrenBlockViewController.swift in Sources */,
 				F3CDFE1220A541CA00A56B49 /* CCHomeImageController.swift in Sources */,
 				F350627620A98D1D00A12BDD /* CCSpliteImageView.swift in Sources */,
+				F30A084A210EFE96002C1F3C /* KXPlayer.m in Sources */,
 				F3CDFE0F20A540FB00A56B49 /* AppDelegate.swift in Sources */,
 				F350627420A98C5D00A12BDD /* CCHomeTableImageCell.swift in Sources */,
 				F350627F20AD693100A12BDD /* WXShareHelper.swift in Sources */,
 				F3CDFE1520A5420400A56B49 /* CCHomeVideoController.swift in Sources */,
 				F30D8A7120A6CFC800025EAE /* CCMainTabBarController.swift in Sources */,
 				F3CDFE1720A5421D00A56B49 /* CCProfileController.swift in Sources */,
+				F30A0829210EBC81002C1F3C /* CCVideoTableViewCell.swift in Sources */,
 				F350627820AADA6100A12BDD /* UIKit+Extension.swift in Sources */,
+				F30A082C210EEF9D002C1F3C /* CCVideoDetailController.swift in Sources */,
 				F30D8A6A20A69C1700025EAE /* Const.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -652,8 +699,18 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LCR7NHC4V2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Tumblr/Libs/arm&simulator(for\\ debug)",
+					"$(PROJECT_DIR)/Tumblr/Libs/arm&simulator(for\\ debug)",
+					"$(PROJECT_DIR)/Tumblr/Libs/arm&simulator(for\\ debug)",
+					"$(PROJECT_DIR)/Tumblr/Libs/arm&simulator(for\\ debug)",
+					"$(PROJECT_DIR)/Tumblr/Libs/arm&simulator(for\\ debug)",
+					"$(PROJECT_DIR)/Tumblr/Libs/arm&simulator(for\\ debug)",
+					"$(PROJECT_DIR)/Tumblr/Libs",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Tumblr/Support Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -677,8 +734,18 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LCR7NHC4V2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Tumblr/Libs/arm&simulator(for\\ debug)",
+					"$(PROJECT_DIR)/Tumblr/Libs/arm&simulator(for\\ debug)",
+					"$(PROJECT_DIR)/Tumblr/Libs/arm&simulator(for\\ debug)",
+					"$(PROJECT_DIR)/Tumblr/Libs/arm&simulator(for\\ debug)",
+					"$(PROJECT_DIR)/Tumblr/Libs/arm&simulator(for\\ debug)",
+					"$(PROJECT_DIR)/Tumblr/Libs/arm&simulator(for\\ debug)",
+					"$(PROJECT_DIR)/Tumblr/Libs",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Tumblr/Support Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
